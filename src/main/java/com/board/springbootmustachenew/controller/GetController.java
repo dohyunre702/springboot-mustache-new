@@ -1,5 +1,6 @@
 package com.board.springbootmustachenew.controller;
 
+import com.board.springbootmustachenew.dto.MemberDto;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -45,5 +46,9 @@ public class GetController {
     }
 
     //5.DTO 객체를 활용한 GET 메서드 구현
-
+    @GetMapping(value = "/request3")
+    public String getRequestParam3(MemberDto memberDto) {
+        //return memberDto.getName() + " " + memberDto.getEmail() + " " + memberDto.getOrganization();
+        return memberDto.toString();
+    }
 }
