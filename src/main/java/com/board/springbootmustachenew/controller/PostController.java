@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
-//POST: 클라이언트가 서버에 리소스를 저장하는 데 사용한다.
+///POST: 클라이언트가 서버에 리소스를 저장하는 데 사용한다.
 @RestController
 @RequestMapping("api/v1/post-api")
 public class PostController {
