@@ -14,7 +14,7 @@ import java.util.Map;
 @RequestMapping("/api/v1/put-api")
 public class PutController {
 
-    //1.RequestBody, Map 활용
+    ///1.RequestBody, Map 활용
     //http:localhost:8080/api/v1/put-api/member
     @PutMapping("/member")
     public String postMember(@RequestBody Map<String, Object> putData) {
